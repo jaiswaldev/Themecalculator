@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CALCULATOR</title>
-    <link rel="stylesheet" href="dev.css/calculator.css" />
-    <link rel="icon" type="image/png" href="./image/calculator.png.png"/>
+    <link rel="stylesheet" href="calculator.css" />
+    <link rel="icon" type="image/png" href="calculator.png.png"/>
   </head>
   <body>
     <div class="container">
@@ -13,7 +13,7 @@
         <h2>!!WELCOME TO JAISWAL CALCULATOR!!</h2>
       </div>
       <div class="calculator">
-        <img src="./image/sun.png.png" id="icon">
+        <img src="sun.png.png" id="icon">
         <!-- <div class="display"> -->
           <input type="text" id="inputbox" placeholder="0" />
         <!-- </div> -->
@@ -78,15 +78,15 @@
       icon.onclick = function(){
         document.body.classList.toggle("light-theme");
         if(document.body.classList.contains("light-theme")){
-               icon.src = "./image/moon.png.png";
+               icon.src = "moon.png.png";
         }
         else{
-              icon.src = "./image/sun.png.png";
+              icon.src = "sun.png.png";
         }
         
       }
     </script>
-    <script src="./javascript/calculator.js"></script>
+    <script src="calculator.js"></script>
    
   </body>
 </html>
