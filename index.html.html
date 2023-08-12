@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="dev.css/calculator.css" />
+    <link rel="icon" type="image/png" href="./image/calculator.png.png"/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h2>!!WELCOME TO JAISWAL CALCULATOR!!</h2>
+      </div>
+      <div class="calculator">
+        <img src="./image/sun.png.png" id="icon">
+        <!-- <div class="display"> -->
+          <input type="text" id="inputbox" placeholder="0" />
+        <!-- </div> -->
+        <div class="row">
+          <button class="cbtn">C</button>
+          <button class="del">Del</button>
+          <button class="operator">%</button>
+          <button class="operator">/</button>
+        </div>
+        <div class="row">
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button class="operator">+</button>
+        </div>
+        <div class="row">
+          <button>4</button>
+          <button>5</button>
+          <button>6</button>
+          <button class="operator">-</button>
+        </div>
+        <div class="row">
+          <button>7</button>
+          <button>8</button>
+          <button>9</button>
+          <button class="operator">*</button>
+        </div>
+        <div class="row">
+          <button>0</button>
+          <button>.</button>
+          <button class="root">&radic;</button>
+          <button class="equalbutton">=</button>
+        </div>
+        <div class="tagline">
+          <span id="element"> </span>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "HI BUDDY!!",
+          "WELCOME TO JAISWAL'S WORLD.",
+          "A PASSINATE WEB DEVELOPER.",
+          "TECH ENTHUSIAST.",
+        ],
+
+        typeSpeed: 50,
+        loop: true,
+        backDelay: 900,
+        backSpeed: 20,
+      });
+    </script>
+
+    <script>
+      var icon = document.getElementById("icon");
+
+      icon.onclick = function(){
+        document.body.classList.toggle("light-theme");
+        if(document.body.classList.contains("light-theme")){
+               icon.src = "./image/moon.png.png";
+        }
+        else{
+              icon.src = "./image/sun.png.png";
+        }
+        
+      }
+    </script>
+    <script src="./javascript/calculator.js"></script>
+   
+  </body>
+</html>
